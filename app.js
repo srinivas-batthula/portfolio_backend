@@ -1,7 +1,10 @@
 const express = require('express');
 const email = require('./services/email');
+const cors = require('cors');
 
 const app =express();
+
+app.use(cors());
 
 app.use(express.json());
 
